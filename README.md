@@ -15,3 +15,23 @@ Dari praktikum ini saya mempelajari bahwa komponen React dapat dibuat secara ter
 ![Hasil Soal 1](docs/soal-1.png)
 
 Hasil akhir menampilkan judul **"Ilmuwan yang luar biasa"** dan tiga gambar yang berasal dari komponen `Profile`.
+
+
+---
+
+### Soal 2 - Mengimpor dan Mengekspor Komponen
+
+Pada praktikum ini saya membuat komponen baru bernama `Gallery` pada file `src/components/gallery.tsx`.
+
+Komponen `Gallery` mengimpor komponen `Profile`, kemudian menampilkan komponen tersebut sebanyak tiga kali. Setelah itu, komponen `Gallery` di-import ke `src/app/page.tsx` dan digunakan pada halaman utama.
+
+Dari praktikum ini saya mempelajari cara memisahkan komponen React ke dalam file yang berbeda serta bagaimana proses `export` dan `import` digunakan agar suatu komponen dapat digunakan kembali oleh komponen lain.
+
+Struktur komponen yang digunakan menjadi:
+
+```text
+Home
+└── Gallery
+    ├── Profile
+    ├── Profile
+    └── Profile
