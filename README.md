@@ -104,3 +104,19 @@ Dari soal ini saya memahami bahwa nilai JavaScript pada atribut JSX harus dituli
 
 ![Hasil Soal 6](docs/soal-6.png)
 
+
+---
+
+### Soal 7 - Mengekstrak Komponen dengan Props
+
+Pada soal ini terdapat dua bagian markup pada komponen `MyGallery` yang memiliki struktur hampir sama. Untuk mengurangi duplikasi kode, markup tersebut diekstrak menjadi komponen `MyProfile`.
+
+Data yang berbeda pada setiap ilmuwan dikirim melalui props, yaitu `name`, `imageId`, `profession`, `awardCount`, `awards`, dan `discovery`.
+
+Dengan menggunakan props, satu komponen `MyProfile` dapat digunakan kembali untuk menampilkan data Maria Skłodowska-Curie dan Katsuko Saruhashi tanpa harus menulis struktur JSX yang sama berulang kali.
+
+Dari soal ini saya memahami bahwa props digunakan untuk mengirim data dari komponen induk ke komponen anak dan membantu membuat komponen React lebih reusable serta mengurangi duplikasi kode.
+
+### Hasil Soal 7
+
+![Hasil Soal 7](docs/soal-7.png)
