@@ -35,3 +35,18 @@ Home
     ├── Profile
     ├── Profile
     └── Profile
+'''
+
+---
+
+### Soal 3 - Memperbaiki Kode JSX
+
+Pada soal ini terdapat kode JSX yang masih memiliki beberapa kesalahan sehingga tidak dapat dijalankan dengan benar.
+
+Perbaikan yang dilakukan yaitu membungkus beberapa elemen menggunakan Fragment (`<>...</>`), mengubah atribut `class` menjadi `className`, menutup tag `<br>` menjadi `<br />`, serta memperbaiki urutan penutupan tag `<b>` dan `<i>`.
+
+Dari soal ini saya memahami bahwa penulisan JSX lebih ketat dibandingkan HTML biasa. JSX hanya dapat mengembalikan satu parent element, seluruh tag harus ditutup, dan beberapa atribut HTML memiliki penulisan yang berbeda ketika digunakan pada React.
+
+### Hasil Soal 3
+
+![Hasil Soal 3](docs/soal-3.png)
