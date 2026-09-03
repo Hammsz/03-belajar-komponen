@@ -145,3 +145,30 @@ Dari soal ini saya memahami bahwa props dapat digunakan tidak hanya untuk menamp
 ### Hasil Soal 8
 
 ![Hasil Soal 8](docs/soal-8.png)
+
+
+
+---
+
+### Soal 9 - Menggunakan Props Children
+
+Pada soal ini saya membuat komponen `Card` untuk menggantikan struktur card yang sebelumnya ditulis berulang kali.
+
+Komponen `Card` menerima prop `children`, sehingga isi JSX yang berada di dalam komponen dapat berbeda-beda meskipun menggunakan struktur card yang sama.
+
+Pada implementasi ini, komponen `Card` pertama digunakan untuk menampilkan foto Aklilu Lemma, sedangkan komponen `Card` kedua digunakan untuk menampilkan informasi tentang Aklilu Lemma.
+
+Contoh penggunaan prop `children`:
+
+```tsx
+<Card>
+  <h1>Foto</h1>
+  ...
+</Card>
+```
+
+Dengan menggunakan `children`, komponen dapat digunakan kembali sebagai pembungkus untuk berbagai jenis konten tanpa harus membuat struktur card yang sama berulang kali.
+
+### Hasil Soal 9
+
+![Hasil Soal 9](docs/soal-9.png)
