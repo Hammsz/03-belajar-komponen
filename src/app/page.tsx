@@ -1,9 +1,9 @@
-import MyGallery from "@/components/mygallery";
+import MyProfile from "@/components/myprofile";
 
 export default function Home() {
   return (
     <main>
-      <MyGallery />
+      <MyProfile />
     </main>
   );
 }

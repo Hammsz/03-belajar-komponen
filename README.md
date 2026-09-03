@@ -120,3 +120,28 @@ Dari soal ini saya memahami bahwa props digunakan untuk mengirim data dari kompo
 ### Hasil Soal 7
 
 ![Hasil Soal 7](docs/soal-7.png)
+
+
+---
+
+### Soal 8 - Mengolah Ukuran Gambar Berdasarkan Props
+
+Pada soal ini komponen `MyAvatar` diubah agar ukuran thumbnail gambar ditentukan berdasarkan nilai prop `size`.
+
+Jika nilai `size` kurang dari 90, komponen menggunakan thumbnail `"s"` atau small. Jika nilai `size` 90 atau lebih, komponen menggunakan thumbnail `"b"` atau big.
+
+Logika yang digunakan adalah:
+
+```tsx
+const imageSize = size < 90 ? "s" : "b";
+```
+
+Kemudian nilai tersebut dikirim ke fungsi `getImageUrlV2` untuk membentuk URL gambar.
+
+Komponen diuji menggunakan beberapa nilai `size`, yaitu 40 dan 100. Dari percobaan ini terlihat bahwa satu komponen yang sama dapat menghasilkan tampilan berbeda berdasarkan props yang diterimanya.
+
+Dari soal ini saya memahami bahwa props dapat digunakan tidak hanya untuk menampilkan data, tetapi juga sebagai dasar untuk menentukan logika di dalam sebuah komponen.
+
+### Hasil Soal 8
+
+![Hasil Soal 8](docs/soal-8.png)
