@@ -35,9 +35,8 @@ Home
     ├── Profile
     ├── Profile
     └── Profile
-'''
+```
 
----
 
 ### Soal 3 - Memperbaiki Kode JSX
 
@@ -50,3 +49,58 @@ Dari soal ini saya memahami bahwa penulisan JSX lebih ketat dibandingkan HTML bi
 ### Hasil Soal 3
 
 ![Hasil Soal 3](docs/soal-3.png)
+
+
+
+---
+
+### Soal 4 - Menggunakan JSX Dinamis
+
+Pada soal ini saya membuat komponen `TodoList` yang menggunakan objek JavaScript `person` untuk menyimpan data nama dan tema tampilan.
+
+Pada kode awal terdapat error pada bagian `{person}` karena `person` merupakan sebuah object dan tidak dapat langsung ditampilkan sebagai teks di JSX. Perbaikannya dilakukan dengan mengakses properti `name` menggunakan `{person.name}`.
+
+Komponen juga menggunakan `person.theme` pada atribut `style` sehingga nilai `backgroundColor` dan `color` dari object dapat digunakan secara dinamis.
+
+### Hasil Soal 4
+
+![Hasil Soal 4](docs/soal-4.png)
+
+
+---
+
+### Soal 5 - Mengekstrak URL Gambar ke Object
+
+Pada soal ini URL gambar yang sebelumnya ditulis langsung pada atribut `src` dipindahkan ke dalam object `person`.
+
+Dengan menyimpan data gambar di dalam object, informasi yang berkaitan dengan seorang ilmuwan dapat dikelompokkan dalam satu tempat dan kemudian digunakan pada JSX melalui properti object.
+
+Setelah perubahan dilakukan, tidak terdapat perbedaan pada tampilan halaman web. Gambar dan informasi yang ditampilkan tetap sama karena perubahan hanya dilakukan pada cara data disimpan dan diakses di dalam kode.
+
+### Hasil Soal 5
+
+![Hasil Soal 5](docs/soal-5.png)
+
+
+---
+
+### Soal 6 - Memperbaiki Atribut src
+
+Pada soal ini atribut `src` pada gambar diperbaiki agar dapat menggunakan beberapa nilai JavaScript untuk membentuk URL gambar secara dinamis.
+
+URL gambar dibentuk dari `baseUrl`, `imageId`, `imageSize`, dan ekstensi `.jpg`.
+
+Perbaikan yang digunakan adalah:
+
+```tsx
+src={baseUrl + person.imageId + person.imageSize + ".jpg"}
+```
+
+Untuk memastikan perbaikan berhasil, nilai `imageSize` diubah dari `"s"` menjadi `"b"`. Setelah perubahan tersebut, ukuran gambar yang ditampilkan ikut berubah menjadi lebih besar.
+
+Dari soal ini saya memahami bahwa nilai JavaScript pada atribut JSX harus ditulis menggunakan kurung kurawal `{}` agar ekspresinya dapat diproses.
+
+### Hasil Soal 6
+
+![Hasil Soal 6](docs/soal-6.png)
+
