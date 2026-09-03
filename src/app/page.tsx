@@ -1,4 +1,5 @@
 import { Gallery } from "@/components/gallery";
+import TodoList from "@/components/todolist";
 
 export default function Home() {
   return (
@@ -7,7 +8,13 @@ export default function Home() {
         Ilmuwan yang luar biasa
       </h1>
 
+      <hr />
+
       <Gallery />
+
+      <hr />
+
+      <TodoList />
     </section>
   );
 }
